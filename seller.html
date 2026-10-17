@@ -1,1 +1,517 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Seller | Mithai Hub</title>
+<meta name="description" content="Sell on Mithai and grow your snacks business.">
+
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --navy: #17243B;
+  --pink: #E82B65;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  font-family: 'Inter', sans-serif;
+  padding-top: 72px;
+  overflow-x: hidden;
+}
+
+/* =========================
+   FIXED NAVBAR
+========================= */
+
+.mithai-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+  background: #ffffff;
+  border-bottom: 1px solid #E9EBF0;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9999;
+}
+
+/* =========================
+   MITHAI HUB LOGO
+========================= */
+
+.mithai-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* BOTH USE KALAM FONT */
+
+.mithai-logo-name,
+.mithai-logo-hub {
+  font-family: 'Kalam', cursive;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.mithai-logo-name {
+  color: var(--pink);
+}
+
+.mithai-logo-hub {
+  color: var(--navy);
+}
+
+/* =========================
+   NAV LINKS
+========================= */
+
+.mithai-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.mithai-nav-links a {
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: color .25s ease;
+}
+
+.mithai-nav-links a:hover {
+  color: var(--pink);
+}
+
+/* =========================
+   MOBILE MENU BUTTON
+========================= */
+
+.mithai-menu-btn {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.mithai-menu-btn span {
+  display: block;
+  width: 23px;
+  height: 2.5px;
+  background: var(--navy);
+  border-radius: 5px;
+  transition: transform .3s, opacity .3s;
+}
+
+/* =========================
+   SELLER HERO
+========================= */
+
+.mithai-seller-hero {
+  position: relative;
+  width: 100%;
+  padding: 24px 15px 20px;
+  background: #ffffff;
+  text-align: center;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* SINGLE LINE HEADING */
+
+.mithai-seller-heading {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 12px;
+  white-space: nowrap;
+  animation: sellerFadeUp .8s ease both;
+}
+
+/* =========================
+   PINK SMOKE FADING TO WHITE
+========================= */
+
+.mithai-seller-heading::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+
+  width: 160%;
+  height: 240%;
+  left: 50%;
+  top: 50%;
+
+  background:
+    radial-gradient(
+      ellipse 55% 48% at 35% 50%,
+      rgba(232,43,101,.20) 0%,
+      rgba(255,135,180,.12) 30%,
+      rgba(255,200,220,.05) 55%,
+      rgba(255,255,255,0) 100%
+    ),
+    radial-gradient(
+      ellipse 50% 48% at 68% 48%,
+      rgba(195,135,245,.15) 0%,
+      rgba(235,190,255,.07) 45%,
+      rgba(255,255,255,0) 100%
+    );
+
+  filter: blur(24px);
+  transform: translate(-50%, -50%);
+  animation: smokeFloat 7s ease-in-out infinite alternate;
+}
+
+/* EXTRA SOFT GLOW */
+
+.mithai-seller-heading::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+
+  width: 120%;
+  height: 180%;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255,160,195,.12) 0%,
+    rgba(255,210,225,.05) 45%,
+    transparent 80%
+  );
+
+  filter: blur(30px);
+}
+
+/* =========================
+   HEADING TEXT
+========================= */
+
+.mithai-seller-heading h1 {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  color: var(--navy);
+}
+
+.mithai-seller-heading h2 {
+  margin: 0;
+  font-family: 'Kalam', cursive;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--pink);
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes sellerFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes smokeFloat {
+  0% {
+    opacity: .75;
+    transform: translate(-52%, -49%) scale(.96);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-48%, -51%) scale(1.05);
+  }
+}
+
+/* =========================
+   FULL WIDTH IMAGE
+========================= */
+
+.mithai-seller-banner {
+  width: 100%;
+  height: 340px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.mithai-seller-banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 650px) {
+
+  body {
+    padding-top: 62px;
+  }
+
+  .mithai-navbar {
+    height: 62px;
+    padding: 0 17px;
+  }
+
+  /* MOBILE MITHAI HUB */
+
+  .mithai-logo {
+    gap: 4px;
+  }
+
+  .mithai-logo-name,
+  .mithai-logo-hub {
+    font-size: 29px;
+  }
+
+  .mithai-menu-btn {
+    display: flex;
+  }
+
+  .mithai-nav-links {
+    display: none;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 10px 20px 16px;
+    border-bottom: 1px solid #E9EBF0;
+    box-shadow: 0 10px 20px rgba(0,0,0,.06);
+  }
+
+  .mithai-nav-links.active {
+    display: flex;
+  }
+
+  .mithai-nav-links a {
+    padding: 15px 4px;
+    font-size: 13px;
+    border-bottom: 1px solid #F1F1F1;
+  }
+
+  .mithai-nav-links a:last-child {
+    border-bottom: none;
+  }
+
+  /* HAMBURGER ANIMATION */
+
+  .mithai-menu-btn.active span:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+  }
+
+  .mithai-menu-btn.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mithai-menu-btn.active span:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+  }
+
+  /* MOBILE HEADING */
+
+  .mithai-seller-hero {
+    padding: 20px 8px 18px;
+  }
+
+  .mithai-seller-heading {
+    gap: 7px;
+  }
+
+  .mithai-seller-heading h1 {
+    font-size: clamp(20px, 6vw, 28px);
+    letter-spacing: -.7px;
+  }
+
+  .mithai-seller-heading h2 {
+    font-size: clamp(29px, 9vw, 40px);
+  }
+
+  /* MOBILE SMOKE */
+
+  .mithai-seller-heading::before {
+    width: 135%;
+    height: 200%;
+    filter: blur(18px);
+  }
+
+  .mithai-seller-heading::after {
+    filter: blur(22px);
+  }
+
+  /* MOBILE IMAGE */
+
+  .mithai-seller-banner {
+    height: auto;
+  }
+
+  .mithai-seller-banner img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .mithai-seller-heading,
+  .mithai-seller-heading::before {
+    animation: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     FIXED NAVBAR
+========================= -->
+
+<nav class="mithai-navbar" aria-label="Main navigation">
+
+  <!-- MITHAI HUB LOGO -->
+  <a href="https://mithai.food/" class="mithai-logo">
+    <span class="mithai-logo-name">Mithai</span>
+    <span class="mithai-logo-hub">hub</span>
+  </a>
+
+  <!-- NAV LINKS -->
+  <div class="mithai-nav-links" id="mithaiNavLinks">
+    <a href="privacypolicy.html">Privacy Policy</a>
+    <a href="termsandconditions.html">Terms and Conditions</a>
+    <a href="helpsupport.html">Help &amp; Support</a>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <button
+    class="mithai-menu-btn"
+    id="mithaiMenuBtn"
+    type="button"
+    aria-label="Toggle menu"
+    aria-expanded="false"
+    aria-controls="mithaiNavLinks"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+</nav>
+
+<!-- =========================
+     SELL ON MITHAI
+========================= -->
+
+<section class="mithai-seller-hero">
+  <div class="mithai-seller-heading">
+    <h1>SELL ON</h1>
+    <h2>Mithai</h2>
+  </div>
+</section>
+
+<!-- =========================
+     FULL WIDTH IMAGE
+========================= -->
+
+<section class="mithai-seller-banner">
+  <img
+    src="seller.webp"
+    alt="Sell on Mithai"
+    loading="eager"
+  >
+</section>
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+const menuBtn = document.getElementById("mithaiMenuBtn");
+const navLinks = document.getElementById("mithaiNavLinks");
+
+function setMithaiMenu(open) {
+  navLinks.classList.toggle("active", open);
+  menuBtn.classList.toggle("active", open);
+  menuBtn.setAttribute("aria-expanded", String(open));
+}
+
+menuBtn.addEventListener("click", () => {
+  setMithaiMenu(!navLinks.classList.contains("active"));
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    setMithaiMenu(false);
+  });
+});
+
+document.addEventListener("click", event => {
+  if (!event.target.closest(".mithai-navbar")) {
+    setMithaiMenu(false);
+  }
+});
+
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") {
+    setMithaiMenu(false);
+  }
+});
+</script>
+
+</body>
+</html>
