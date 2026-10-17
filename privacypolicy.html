@@ -1,0 +1,735 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Privacy Policy | Mithai</title>
+<meta name="description" content="Read the Mithai Privacy Policy to understand how personal information is collected, used, shared and protected.">
+<link rel="canonical" href="https://mithai.food/privacy-policy.html">
+
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --navy: #17243B;
+  --pink: #E82B65;
+  --text: #455066;
+  --line: #E9EBF0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding-top: 72px;
+  background: #ffffff;
+  color: var(--navy);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.8;
+}
+
+/* FIXED NAVBAR */
+
+.mithai-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+  background: #ffffff;
+  border-bottom: 1px solid var(--line);
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9999;
+}
+
+.mithai-logo {
+  font-family: 'Kalam', cursive;
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--pink);
+  text-decoration: none;
+  line-height: 1;
+}
+
+.mithai-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.mithai-nav-links a {
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.mithai-nav-links a:hover {
+  color: var(--pink);
+}
+
+.mithai-menu-btn {
+  display: none;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.mithai-menu-btn span {
+  display: block;
+  width: 23px;
+  height: 2.5px;
+  background: var(--navy);
+  border-radius: 5px;
+  transition: .25s;
+}
+
+/* TITLE SECTION */
+
+.privacy-heading {
+  padding: 64px 6% 42px;
+  border-bottom: 1px solid var(--line);
+}
+
+.privacy-heading-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.privacy-heading h1 {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  line-height: 1.2;
+  margin: 0 0 14px;
+}
+
+.privacy-heading h1 span {
+  color: var(--pink);
+}
+
+.privacy-heading p {
+  color: var(--text);
+  font-size: 15px;
+  max-width: 800px;
+  margin: 0 0 15px;
+}
+
+.updated-date {
+  font-size: 12px;
+  color: #7D8798;
+  font-weight: 500;
+}
+
+/* DOCUMENT LAYOUT */
+
+.privacy-content {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 6% 85px;
+}
+
+.privacy-introduction {
+  margin-bottom: 42px;
+}
+
+.privacy-section {
+  margin-bottom: 42px;
+}
+
+.privacy-section h2 {
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.4;
+  margin: 0 0 15px;
+  letter-spacing: -.4px;
+}
+
+.privacy-section h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 22px 0 8px;
+}
+
+.privacy-content p {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.95;
+  margin: 0 0 15px;
+}
+
+.privacy-content ul,
+.privacy-content ol {
+  padding-left: 24px;
+  margin: 12px 0 20px;
+}
+
+.privacy-content li {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.95;
+  margin-bottom: 9px;
+  padding-left: 4px;
+}
+
+.privacy-content li::marker {
+  color: var(--pink);
+}
+
+.privacy-content strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.privacy-content a {
+  color: var(--pink);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.privacy-content a:hover {
+  text-decoration: underline;
+}
+
+.privacy-divider {
+  height: 1px;
+  background: var(--line);
+  border: 0;
+  margin: 40px 0;
+}
+
+/* FOOTER */
+
+.mithai-footer {
+  background: #ffffff;
+  border-top: 1px solid var(--line);
+  padding: 28px 6%;
+  text-align: center;
+}
+
+.mithai-footer p {
+  margin: 0;
+  font-size: 12px;
+  color: #7B8495;
+}
+
+.mithai-footer strong {
+  color: var(--navy);
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  body {
+    padding-top: 62px;
+  }
+
+  .mithai-navbar {
+    height: 62px;
+    padding: 0 17px;
+  }
+
+  .mithai-logo {
+    font-size: 29px;
+  }
+
+  .mithai-menu-btn {
+    display: flex;
+  }
+
+  .mithai-nav-links {
+    display: none;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 10px 20px 16px;
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 10px 20px rgba(0,0,0,.06);
+  }
+
+  .mithai-nav-links.active {
+    display: flex;
+  }
+
+  .mithai-nav-links a {
+    font-size: 13px;
+    padding: 15px 4px;
+    border-bottom: 1px solid #F1F1F1;
+  }
+
+  .mithai-nav-links a:last-child {
+    border-bottom: 0;
+  }
+
+  .mithai-menu-btn.active span:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+  }
+
+  .mithai-menu-btn.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mithai-menu-btn.active span:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+  }
+
+  .privacy-heading {
+    padding: 43px 20px 30px;
+  }
+
+  .privacy-heading h1 {
+    font-size: 33px;
+    letter-spacing: -1px;
+  }
+
+  .privacy-heading p {
+    font-size: 13px;
+  }
+
+  .privacy-content {
+    padding: 32px 20px 65px;
+  }
+
+  .privacy-section {
+    margin-bottom: 32px;
+  }
+
+  .privacy-section h2 {
+    font-size: 18px;
+  }
+
+  .privacy-content p,
+  .privacy-content li {
+    font-size: 13px;
+    line-height: 1.9;
+  }
+
+  .privacy-divider {
+    margin: 30px 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- FIXED NAVBAR -->
+
+<nav class="mithai-navbar" aria-label="Main navigation">
+
+  <a href="https://mithai.food/" class="mithai-logo">
+    Mithai
+  </a>
+
+  <div class="mithai-nav-links" id="mithaiNavLinks">
+    <a href="termsandconditions.html">Terms and Conditions</a>
+    <a href="helpsupport.html">Help &amp; Support</a>
+    <a href="seller.html">Seller</a>
+  </div>
+
+  <button class="mithai-menu-btn"
+          id="mithaiMenuBtn"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mithaiNavLinks">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+</nav>
+
+<!-- PAGE HEADING -->
+
+<header class="privacy-heading">
+  <div class="privacy-heading-inner">
+    <h1>Privacy <span>Policy</span></h1>
+
+    <p>
+      This Privacy Policy explains how Mithai collects,
+      uses, stores and protects information when you
+      access our website, mobile applications and services.
+    </p>
+
+    <div class="updated-date">
+      Last Updated: 17 October 2026
+    </div>
+  </div>
+</header>
+
+<!-- PRIVACY DOCUMENT -->
+
+<main class="privacy-content">
+
+  <div class="privacy-introduction">
+    <p>
+      Welcome to <strong>Mithai</strong>, a snacks delivery
+      platform managed by
+      <strong>Cezonal Solutions Private Limited</strong>.
+      We value the privacy of our customers and are
+      committed to handling personal information
+      responsibly.
+    </p>
+
+    <p>
+      By accessing or using our platform, you acknowledge
+      the information practices described in this Privacy
+      Policy. Please read this document carefully to
+      understand how information may be collected,
+      processed and shared in connection with our services.
+    </p>
+  </div>
+
+  <section class="privacy-section">
+    <h2>1. Information We Collect</h2>
+
+    <p>
+      We may collect information that you provide directly
+      when registering, placing orders, selecting delivery
+      addresses or contacting customer support.
+    </p>
+
+    <p>This information may include:</p>
+
+    <ul>
+      <li><strong>Personal details:</strong> Your name and mobile number.</li>
+      <li><strong>Delivery details:</strong> Your address, landmark and selected delivery location.</li>
+      <li><strong>Order information:</strong> Products ordered, quantities, order amounts and order history.</li>
+      <li><strong>Payment information:</strong> Payment method, transaction references and payment status.</li>
+      <li><strong>Device information:</strong> Browser type, device type and technical information used to operate the platform.</li>
+      <li><strong>Support information:</strong> Messages, complaints, feedback and requests submitted to our support team.</li>
+    </ul>
+
+    <p>
+      Certain technical information may also be collected
+      automatically when you interact with the platform,
+      depending on the technologies used.
+    </p>
+  </section>
+
+  <section class="privacy-section">
+    <h2>2. How We Use Your Information</h2>
+
+    <p>
+      Information collected through Mithai may be used
+      to operate, maintain and improve our services.
+    </p>
+
+    <ol>
+      <li>To create and manage customer accounts.</li>
+      <li>To process, confirm and fulfill orders.</li>
+      <li>To identify serviceable delivery locations.</li>
+      <li>To communicate order confirmations and delivery updates.</li>
+      <li>To provide customer assistance and resolve complaints.</li>
+      <li>To maintain transaction records and manage refunds.</li>
+      <li>To detect suspicious activity and protect platform security.</li>
+      <li>To comply with applicable laws and regulatory obligations.</li>
+    </ol>
+  </section>
+
+  <section class="privacy-section">
+    <h2>3. Location Information</h2>
+
+    <p>
+      Mithai may request permission to access your device's
+      location so that we can determine whether delivery
+      services are available in your area and help you
+      choose a delivery address.
+    </p>
+
+    <p>
+      Location access is subject to the permissions granted
+      through your device or browser. You may change
+      these permissions through your device settings.
+      Where supported, you may enter your delivery
+      address manually instead.
+    </p>
+  </section>
+
+  <section class="privacy-section">
+    <h2>4. Payment and Transaction Information</h2>
+
+    <p>
+      When you place an order, payment-related information
+      may be processed to confirm your transaction,
+      maintain order records, manage payment failures
+      and facilitate refunds where applicable.
+    </p>
+
+    <p>
+      Supported third-party payment services may process
+      payments according to their own terms and privacy
+      policies. Mithai may receive payment status,
+      transaction identifiers and related information
+      necessary for order management.
+    </p>
+  </section>
+
+  <section class="privacy-section">
+    <h2>5. Sharing of Personal Information</h2>
+
+    <p>
+      We may share information with third parties where
+      reasonably necessary to provide our services.
+      Such parties may include:
+    </p>
+
+    <ul>
+      <li>Delivery personnel responsible for fulfilling orders.</li>
+      <li>Sellers and service partners involved in order processing.</li>
+      <li>Payment providers handling transactions.</li>
+      <li>Technology and hosting providers supporting platform operations.</li>
+      <li>Government or regulatory authorities where disclosure is legally required.</li>
+    </ul>
+
+    <p>
+      We aim to limit information sharing to what is
+      necessary for the relevant business or legal purpose.
+    </p>
+  </section>
+
+  <section class="privacy-section">
+    <h2>6. Data Security</h2>
+
+    <p>
+      We take reasonable steps to protect personal
+      information against unauthorized access,
+      misuse, alteration, loss and disclosure.
+    </p>
+
+    <p>
+      However, no website, application or electronic
+      storage system can guarantee complete security.
+      Users should take appropriate precautions to
+      protect their accounts and devices.
+    </p>
+  </section>
+
+  <section class="privacy-section">
+    <h2>7. Cookies and Local Storage</h2>
+
+    <p>
+      Our website may use cookies, browser storage
+      and similar technologies to support essential
+      features, remember user preferences and improve
+      the browsing experience.
+    </p>
+
+    <p>
+      Some technologies may also help us understand
+      technical performance and usage patterns.
+      You can manage certain browser storage
+      preferences through your browser settings.
+    </p>
+  </section>
+
+  <section class="privacy-section">
+    <h2>8. Data Retention</h2>
+
+    <p>
+      We may retain personal information for the
+      period reasonably necessary to provide our
+      services, maintain transaction records,
+      resolve disputes, address customer requests
+      and meet applicable legal obligations.
+    </p>
+
+    <p>
+      Retention periods may vary depending on
+      the type of information and the purpose
+      for which it was collected.
+    </p>
+  </section>
+
+  <section class="privacy-section">
+    <h2>9. Your Rights and Choices</h2>
+
+    <p>
+      Subject to applicable laws, you may contact
+      us regarding your personal information and
+      request appropriate assistance.
+    </p>
+
+    <p>Such requests may include:</p>
+
+    <ul>
+      <li>Requesting access to personal information.</li>
+      <li>Requesting correction of inaccurate information.</li>
+      <li>Requesting deletion of eligible personal information.</li>
+      <li>Managing device and location permissions.</li>
+      <li>Raising concerns about the handling of personal data.</li>
+    </ul>
+
+    <p>
+      Certain information may need to be retained
+      to satisfy legal, accounting or regulatory
+      requirements.
+    </p>
+  </section>
+
+  <section class="privacy-section">
+    <h2>10. Children's Privacy</h2>
+
+    <p>
+      Mithai is intended for individuals who can
+      lawfully access and use its services.
+      Where applicable law requires parental
+      or guardian consent for processing children's
+      personal information, such requirements
+      must be observed.
+    </p>
+  </section>
+
+  <section class="privacy-section">
+    <h2>11. Third-Party Websites and Services</h2>
+
+    <p>
+      Our platform may provide access to third-party
+      websites, payment services or other external
+      platforms. These services may operate under
+      their own privacy policies and terms.
+    </p>
+
+    <p>
+      We encourage users to review the privacy
+      practices of external services before
+      providing personal information.
+    </p>
+  </section>
+
+  <section class="privacy-section">
+    <h2>12. Updates to This Privacy Policy</h2>
+
+    <p>
+      We may revise this Privacy Policy from
+      time to time to reflect changes in our
+      operations, technologies, services or
+      applicable legal requirements.
+    </p>
+
+    <p>
+      Updated versions will be published on
+      this page with the revised date.
+      Users are encouraged to review this
+      policy periodically.
+    </p>
+  </section>
+
+  <hr class="privacy-divider">
+
+  <section class="privacy-section">
+    <h2>13. Business Information</h2>
+
+    <p>
+      <strong>Platform Name:</strong> Mithai
+    </p>
+
+    <p>
+      <strong>Managed By:</strong>
+      Cezonal Solutions Private Limited
+    </p>
+
+    <p>
+      <strong>Business Address:</strong>
+      2nd Floor, Opposite VMAX,
+      Tanuku, Andhra Pradesh, India.
+    </p>
+
+    <p>
+      <strong>Official Website:</strong>
+      <a href="https://mithai.food/">
+        https://mithai.food/
+      </a>
+    </p>
+  </section>
+
+  <section class="privacy-section">
+    <h2>14. Contact and Privacy Requests</h2>
+
+    <p>
+      If you have questions, concerns or requests
+      relating to this Privacy Policy or the
+      handling of your personal information,
+      please contact Mithai through its
+      official customer support channels.
+    </p>
+
+    <p>
+      Please provide sufficient information
+      to help us identify and respond to
+      your request appropriately.
+    </p>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer class="mithai-footer">
+  <p>
+    © 2026 <strong>Mithai</strong>.
+    Managed by Cezonal Solutions Private Limited.
+    All rights reserved.
+  </p>
+</footer>
+
+<script>
+const menuBtn = document.getElementById("mithaiMenuBtn");
+const navLinks = document.getElementById("mithaiNavLinks");
+
+function setMithaiMenu(open) {
+  navLinks.classList.toggle("active", open);
+  menuBtn.classList.toggle("active", open);
+  menuBtn.setAttribute("aria-expanded", String(open));
+}
+
+menuBtn.addEventListener("click", () => {
+  setMithaiMenu(!navLinks.classList.contains("active"));
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    setMithaiMenu(false);
+  });
+});
+
+document.addEventListener("click", event => {
+  if (!event.target.closest(".mithai-navbar")) {
+    setMithaiMenu(false);
+  }
+});
+
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") {
+    setMithaiMenu(false);
+  }
+});
+</script>
+
+</body>
+</html>
