@@ -5,8 +5,16 @@
 <meta charset="UTF-8">
 <meta name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+<!-- MITHAI FAVICON -->
+<!-- MITHAI FAVICONS -->
+<link rel="icon" type="image/png" sizes="24x24" href="favi-24.png">
+<link rel="icon" type="image/png" sizes="48x48" href="favi.png">
 <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+<title>Mithai | 500 + Snacks in Minutes</title>
+
+<!-- MITHAI FAVICON -->
+<link rel="icon" type="image/png" href="favi.png">
+<link rel="apple-touch-icon" href="favi.png">
 
 <style>
 * {
@@ -656,30 +664,44 @@ background-repeat: repeat-x;
   object-fit: contain;
 }
 
+.mithai-price {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+}
+
 /* HANGING PRICE TAG */
+
+/* PREMIUM PINK PRICE TAG */
 .mithai-price {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 50px;
   height: 50px;
   margin-top: -32px;
   transform: translateX(40px);
-  padding: 10px 0 0;
+  padding: 0;
+
   box-sizing: border-box;
 
   background: radial-gradient(
-    circle at 35% 25%,
-    #B75D56,
-    #762C2A 65%,
-    #481A1B
+    circle at 30% 25%,
+    #FF82AD 0%,
+    #E82B65 45%,
+    #A9154A 100%
   );
 
   color: #FFFFFF;
   font-family: Arial, sans-serif;
   font-size: 14px;
   font-weight: 800;
+
   border-radius: 50%;
   flex-shrink: 0;
 
@@ -699,19 +721,11 @@ background-repeat: repeat-x;
   );
 }
 
-/* GOLDEN HOLE */
+/* REMOVE GOLDEN DOT */
 .mithai-price::after {
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: 50%;
-  width: 7px;
-  height: 7px;
-  background: #FFF3C2;
-  border: 2px solid #D7AE42;
-  border-radius: 50%;
-  transform: translateX(-50%);
+  content: none !important;
 }
+
 
 /* RIGHT CORNER IMAGE */
 .mithai-hungry-feature {
@@ -1146,6 +1160,12 @@ background-repeat: repeat-x;
     font-size: 11px;
   }
 }
+.mithai-footer-bottom .fa-heart {
+  color: #E82B65;
+  font-size: 14px;
+  margin: 0 3px;
+}
+
 
 /* CONNECT + DOWNLOAD SIDE BY SIDE */
 .mithai-footer-connect {
@@ -1223,6 +1243,44 @@ background-repeat: repeat-x;
 @media (max-width: 767px) {
   .mithai-footer-download-block {
     transform: translateX(0px);
+  }
+}
+
+/* EXACT iOS SPLASH LOGO STYLE */
+.mithai-footer-brand h2.mithai-footer-splash-logo {
+  display: block !important;
+  width: 210px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.mithai-footer-brand h2.mithai-footer-splash-logo {
+  transform: translateX(-40px) !important;
+}
+
+.mithai-footer-splash-logo svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.mithai-footer-splash-logo svg text {
+  font-family: 'Kalam', cursive !important;
+  font-size: 130px;
+  font-weight: 400;
+  fill: #E82B65;
+  stroke: #E82B65;
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+  paint-order: stroke fill;
+}
+
+@media (max-width: 767px) {
+  .mithai-footer-brand h2.mithai-footer-splash-logo {
+    width: 180px;
   }
 }
 
@@ -1487,7 +1545,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
     <!-- BRAND -->
     <div class="mithai-footer-brand">
-      <h2>MITHAI<span></span></h2>
+   
+<h2 class="mithai-footer-splash-logo" aria-label="MITHAI">
+  <svg id="mithaiFooterLogo"
+       viewBox="0 0 800 210"
+       xmlns="http://www.w3.org/2000/svg"
+       role="img"
+       aria-label="MITHAI">
+  </svg>
+</h2>
+
 
       <p class="mithai-footer-tagline">
         Snacks in Minutes.
@@ -1509,6 +1576,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       <a href="/terms">Terms & Conditions</a>
       <a href="/refund-policy">Refund Policy</a>
       <a href="/support">Help & Support</a>
+      <a href="/support">Seller</a>
+      
     </div>
 
     <!-- CONNECT -->
@@ -1519,7 +1588,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   <!-- SOCIAL MEDIA -->
   <div class="mithai-footer-social-block">
     <h3>Connect With Us</h3>
-    <p>Andhra Pradesh, India</p>
+    <p>Cezonal Solutions pvt ltd,
+      Andhra Pradesh, India</p>
 
     <div class="mithai-footer-socials">
       <a href="#" aria-label="Instagram">
@@ -1565,9 +1635,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       © 2026 MITHAI. All rights reserved.
     </p>
 
-    <p>
-      Made with <span>♥</span> for snack lovers.
-    </p>
+    
+<p>
+  Made with <i class="fa-solid fa-heart"></i> for snack lovers.
+</p>
+
 
   </div>
 
@@ -1657,6 +1729,109 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     update(false);
   });
 })();
+
+(async function () {
+  const WORD = "MITHAI";
+  const SVG_NS = "http://www.w3.org/2000/svg";
+
+  const DURATION = 2000;
+  const LETTER_START = 50;
+  const LETTER_STEP = 225;
+  const DRAW_TIME = 270;
+
+  const svg = document.getElementById("mithaiFooterLogo");
+  if (!svg) return;
+
+  const group = document.createElementNS(SVG_NS, "g");
+  svg.appendChild(group);
+
+  const letters = [];
+
+  for (let i = 0; i < WORD.length; i++) {
+    const letter = document.createElementNS(SVG_NS, "text");
+
+    letter.textContent = WORD[i];
+    letter.setAttribute("x", "0");
+    letter.setAttribute("y", "143");
+
+    group.appendChild(letter);
+    letters.push(letter);
+  }
+
+  try {
+    await Promise.race([
+      document.fonts.load('400 130px "Kalam"', WORD),
+      new Promise(resolve => setTimeout(resolve, 1200))
+    ]);
+  } catch (e) {}
+
+  let cursor = 0;
+
+  letters.forEach(letter => {
+    letter.setAttribute("x", cursor);
+    cursor += letter.getComputedTextLength() + 4;
+  });
+
+  const scale = Math.min(1, 720 / Math.max(cursor, 1));
+  const offset = (800 - cursor * scale) / 2;
+
+  group.setAttribute(
+    "transform",
+    `translate(${offset} 0) scale(${scale} 1)`
+  );
+
+  letters.forEach((letter, i) => {
+    const length = Math.max(
+      700,
+      letter.getComputedTextLength() * 8
+    );
+
+    letter.style.strokeDasharray = length;
+    letter.style.strokeDashoffset = length;
+    letter.style.fillOpacity = 0;
+
+    const start = LETTER_START + i * LETTER_STEP;
+    const end = start + DRAW_TIME;
+
+    letter.animate([
+      {
+        offset: 0,
+        strokeDashoffset: length,
+        fillOpacity: 0
+      },
+      {
+        offset: start / DURATION,
+        strokeDashoffset: length,
+        fillOpacity: 0
+      },
+      {
+        offset: end / DURATION,
+        strokeDashoffset: 0,
+        fillOpacity: 0
+      },
+      {
+        offset: (end + 60) / DURATION,
+        strokeDashoffset: 0,
+        fillOpacity: 1
+      },
+      {
+        offset: 0.90,
+        strokeDashoffset: 0,
+        fillOpacity: 1
+      },
+      {
+        offset: 1,
+        strokeDashoffset: length,
+        fillOpacity: 0
+      }
+    ], {
+      duration: DURATION,
+      iterations: Infinity,
+      easing: "linear"
+    });
+  });
+})();
+
 </script>
 </body>
 </body>
