@@ -1,0 +1,93 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://mithai.food/</loc>
+
+    <!-- MITHAI Official Logo -->
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/mithailogo.png</image:loc>
+    </image:image>
+
+    <!-- MITHAI SEO Images 1 to 25 -->
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/1.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/2.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/3.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/4.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/5.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/6.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/7.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/8.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/9.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/10.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/11.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/12.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/13.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/14.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/15.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/16.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/17.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/18.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/19.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/20.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/21.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/22.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/23.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/24.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://mithai.food/seoimages/25.png</image:loc>
+    </image:image>
+
+  </url>
+</urlset>
